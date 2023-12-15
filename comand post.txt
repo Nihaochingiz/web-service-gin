@@ -1,0 +1,31 @@
+curl -i -X POST -H "Content-Type:application/json" -d "{  ^"firstName^" : ^"Frodo^",  ^"lastName^" : ^"Baggins^" }" http://localhost:8080/people
+
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data ^{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}^
+
+
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST" \
+    --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+
+
+curl -i -X POST -H "Content-Type:application/json" -d "{  ^"id^" : ^"4^",  ^"title^" : ^"The Modern Sound of Betty Carter^", ^"artist^" : ^"Betty Carter^",  ^"price^" : ^price^ }" http://localhost:8080/albums
+
+
+
+curl  -i -X POST http://localhost:8080/albums  -d '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+
+
+
+
+ curl -X POST localhost:8080/albums
+	-H "Content-type:application/json" 
+	-d "{\"id\":\"4\",\"title\":\"The Modern Sound of Betty Carter\",\"artist\":\"Betty Carter\",\"price\":\49.99\ }"
+
+
+
